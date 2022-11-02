@@ -1,0 +1,157 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://juego/niveles/NivelBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://juego/personaje/PersonajePrincipal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://juego/objeto/PlataformaImpulsora.tscn" type="PackedScene" id=4]
+[ext_resource path="res://juego/objeto/power_up/PowerUpSalto.tscn" type="PackedScene" id=5]
+[ext_resource path="res://juego/objeto/Portal.tscn" type="PackedScene" id=6]
+[ext_resource path="res://juego/enemigos/Nubon.tscn" type="PackedScene" id=7]
+[ext_resource path="res://juego/plataforma/PlataformaLargaPiedra.tscn" type="PackedScene" id=8]
+[ext_resource path="res://juego/plataforma/PlataformaCesped.tscn" type="PackedScene" id=9]
+[ext_resource path="res://juego/plataforma/PlataformaArena.tscn" type="PackedScene" id=10]
+[ext_resource path="res://juego/objeto/MonedaOro.tscn" type="PackedScene" id=11]
+[ext_resource path="res://juego/objeto/MonedaBronce.tscn" type="PackedScene" id=12]
+[ext_resource path="res://juego/objeto/Pinchos.tscn" type="PackedScene" id=14]
+[ext_resource path="res://juego/objeto/PlataformaTrampa.tscn" type="PackedScene" id=15]
+[ext_resource path="res://juego/plataforma/PlataformaNieve.tscn" type="PackedScene" id=17]
+[ext_resource path="res://juego/objeto/MonedaPlata.tscn" type="PackedScene" id=18]
+[ext_resource path="res://juego/plataforma/PlataformaCortaMadera.tscn" type="PackedScene" id=20]
+[ext_resource path="res://juego/objeto/ZanahoriaLlave.tscn" type="PackedScene" id=21]
+
+[node name="Nivel1_v2" instance=ExtResource( 1 )]
+nivel_actual = "res://juego/niveles/Nivel1_v2.tscn"
+
+[node name="PersonajePrincipal" parent="." index="2" instance=ExtResource( 2 )]
+position = Vector2( 47.3896, 697.323 )
+velocidad = Vector2( 400, 900 )
+acel_caida = 320
+
+[node name="PlataformaArena4" parent="PlataformasNormales" index="0" instance=ExtResource( 10 )]
+position = Vector2( 2071.05, 422.411 )
+
+[node name="PlataformaArena3" parent="PlataformasNormales" index="1" instance=ExtResource( 10 )]
+position = Vector2( 3138.19, 603.204 )
+
+[node name="PlataformaArena2" parent="PlataformasNormales" index="2" instance=ExtResource( 10 )]
+position = Vector2( 1834.19, 776.923 )
+
+[node name="PlataformaCesped" parent="PlataformasNormales" index="3" instance=ExtResource( 9 )]
+position = Vector2( 956.382, 398.643 )
+
+[node name="PlataformaCesped4" parent="PlataformasNormales" index="4" instance=ExtResource( 9 )]
+position = Vector2( 2066.97, 688.762 )
+
+[node name="PlataformaCesped2" parent="PlataformasNormales" index="5" instance=ExtResource( 9 )]
+position = Vector2( 580.333, 543.603 )
+
+[node name="PlataformaNieve" parent="PlataformasNormales" index="6" instance=ExtResource( 17 )]
+position = Vector2( 2288.17, 600.615 )
+
+[node name="PlataformaCortaMadera" parent="PlataformasCortas" index="0" instance=ExtResource( 20 )]
+position = Vector2( 1348.56, 658.717 )
+
+[node name="PlataformaCortaMadera3" parent="PlataformasCortas" index="1" instance=ExtResource( 20 )]
+position = Vector2( 1146.78, 519.859 )
+
+[node name="PlataformaCortaMadera2" parent="PlataformasCortas" index="2" instance=ExtResource( 20 )]
+position = Vector2( 791.05, 466.768 )
+
+[node name="PlataformaLargaPiedra" parent="PlataformasLargas" index="0" instance=ExtResource( 8 )]
+position = Vector2( 235.219, 711.043 )
+
+[node name="PlataformaLargaPiedra10" parent="PlataformasLargas" index="1" instance=ExtResource( 8 )]
+position = Vector2( 1556.79, 943.637 )
+
+[node name="PlataformaLargaPiedra3" parent="PlataformasLargas" index="2" instance=ExtResource( 8 )]
+position = Vector2( 3142.51, 986.225 )
+
+[node name="PlataformaLargaPiedra2" parent="PlataformasLargas" index="3" instance=ExtResource( 8 )]
+position = Vector2( 2787.61, 388.869 )
+
+[node name="Nubon2" parent="Enemigos" index="0" instance=ExtResource( 7 )]
+position = Vector2( 3128.82, -235.27 )
+
+[node name="Pinchos" parent="Objetos" index="0" instance=ExtResource( 14 )]
+position = Vector2( 1661.06, 925.096 )
+
+[node name="Pinchos2" parent="Objetos" index="1" instance=ExtResource( 14 )]
+position = Vector2( 2712.46, 370.015 )
+
+[node name="Pinchos3" parent="Objetos" index="2" instance=ExtResource( 14 )]
+position = Vector2( 3158.62, 966.673 )
+
+[node name="MonedaOro" parent="Monedas" index="0" instance=ExtResource( 11 )]
+position = Vector2( 913.813, -16.6636 )
+
+[node name="MonedaOro2" parent="Monedas" index="1" instance=ExtResource( 11 )]
+position = Vector2( 1830.27, 205.078 )
+
+[node name="MonedaPlata" parent="Monedas" index="2" instance=ExtResource( 18 )]
+position = Vector2( 1622.97, 594.901 )
+
+[node name="MonedaBronce" parent="Monedas" index="3" instance=ExtResource( 12 )]
+position = Vector2( 701.904, 355.985 )
+
+[node name="MonedaBronce27" parent="Monedas" index="4" instance=ExtResource( 12 )]
+position = Vector2( 628.921, 397.985 )
+
+[node name="MonedaBronce28" parent="Monedas" index="5" instance=ExtResource( 12 )]
+position = Vector2( 589.904, 467.985 )
+
+[node name="MonedaPlata2" parent="Monedas" index="6" instance=ExtResource( 18 )]
+position = Vector2( 1622.76, 523.333 )
+
+[node name="MonedaBronce2" parent="Monedas" index="7" instance=ExtResource( 12 )]
+position = Vector2( 770.154, 349.572 )
+
+[node name="MonedaPlata3" parent="Monedas" index="8" instance=ExtResource( 18 )]
+position = Vector2( 2446.56, 302.318 )
+
+[node name="MonedaPlata4" parent="Monedas" index="9" instance=ExtResource( 18 )]
+position = Vector2( 2446.31, 237.289 )
+
+[node name="MonedaBronce4" parent="Monedas" index="10" instance=ExtResource( 12 )]
+position = Vector2( 2857.52, 24.2184 )
+
+[node name="MonedaBronce6" parent="Monedas" index="11" instance=ExtResource( 12 )]
+position = Vector2( 2857.13, -87.6419 )
+
+[node name="MonedaBronce7" parent="Monedas" index="12" instance=ExtResource( 12 )]
+position = Vector2( 2856.97, -31.3859 )
+
+[node name="MonedaPlata5" parent="Monedas" index="13" instance=ExtResource( 18 )]
+position = Vector2( 2448.3, 176.788 )
+
+[node name="MonedaPlata6" parent="Monedas" index="14" instance=ExtResource( 18 )]
+position = Vector2( 2947.73, 904.476 )
+
+[node name="MonedaPlata7" parent="Monedas" index="15" instance=ExtResource( 18 )]
+position = Vector2( 2947.48, 839.447 )
+
+[node name="MonedaPlata8" parent="Monedas" index="16" instance=ExtResource( 18 )]
+position = Vector2( 2948.47, 776.945 )
+
+[node name="MonedaBronce5" parent="Monedas" index="17" instance=ExtResource( 12 )]
+position = Vector2( 2857.75, 80.3819 )
+
+[node name="PlataformaImpulsora3" parent="PlataformasImpulsoras" index="0" instance=ExtResource( 4 )]
+position = Vector2( 1518.56, 762.781 )
+
+[node name="PlataformaImpulsora5" parent="PlataformasImpulsoras" index="1" instance=ExtResource( 4 )]
+position = Vector2( 2446.56, 498.781 )
+
+[node name="PlataformaImpulsora4" parent="PlataformasImpulsoras" index="2" instance=ExtResource( 4 )]
+position = Vector2( 2860.55, 233.527 )
+
+[node name="PlataformaTrampa" parent="PlataformasTrampa" index="0" instance=ExtResource( 15 )]
+position = Vector2( 1826.75, 352.408 )
+
+[node name="PowerUpSalto" parent="PowerUp" index="0" instance=ExtResource( 5 )]
+position = Vector2( 1021.45, 325.269 )
+
+[node name="ZanahoriaLlave2" parent="Zanahorias" index="0" instance=ExtResource( 21 )]
+position = Vector2( 3145.35, 543.165 )
+
+[node name="Portal" parent="." index="14" instance=ExtResource( 6 )]
+position = Vector2( 3328.17, 835.823 )
+proximo_nivel = "res://juego/niveles/Nivel2.tscn"

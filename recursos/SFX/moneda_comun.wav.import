@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/moneda_comun.wav-e9539b42e66d2fb4bb3e5fe6fefa992a.sample"
+
+[deps]
+
+source_file="res://recursos/SFX/moneda_comun.wav"
+dest_files=[ "res://.import/moneda_comun.wav-e9539b42e66d2fb4bb3e5fe6fefa992a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
